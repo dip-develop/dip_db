@@ -1,10 +1,15 @@
-name: dip_db_workspace
+name: _
+publish_to: none
 description: Modular, fast, progressive database for Dart and Flutter.
-homepage: https://github.com/dipdev-studio/dip_db
-repository: https://github.com/dipdev-studio/dip_db
+homepage: https://github.com/dip-develop/dip_db
+repository: https://github.com/dip-develop/dip_db
 
 environment:
-  sdk: ">=3.2.3 <4.0.0"
+  sdk: ^3.6.0
 
 dev_dependencies:
   melos: ^3.4.0
+
+workspace:
+  - packages/dip_db
+  - packages/dip_db_flutter
