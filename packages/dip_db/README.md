@@ -9,7 +9,7 @@ Modular, fast, progressive database for Dart and Flutter
 
 ## Features
 
-TODO: 
+TODO:
 
 ## Getting started
 

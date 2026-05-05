@@ -1,16 +1,12 @@
 name: dip_db
-repository: https://github.com/dipdev-studio/dip_db
+repository: https://github.com/dip-develop/dip_db
 
 packages:
   - packages/*
 
 command:
   version:
-    # Generate commit links in package changelogs.
     linkToCommits: true
-    # # Only allow versioning to happen on main branch.
-    # branch: master
-    # Additionally build a changelog at the root of the workspace.
     workspaceChangelog: true
 
 scripts:
@@ -19,8 +15,6 @@ scripts:
     description: Run all static analysis checks.
 
   analyze:
-    # We are setting the concurrency to 1 because a higher concurrency can crash
-    # the analysis server on low performance machines (like GitHub Actions).
     run: |
       melos exec -c 1 -- \
         dart analyze . --fatal-infos
